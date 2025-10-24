@@ -30,6 +30,7 @@ export type Config = {
   showButtons?: AllowedButtons[];
   disableButtons?: AllowedButtons[];
   showProgress?: boolean;
+  focusElement?: boolean;
 
   // Button texts
   progressText?: string;
@@ -71,6 +72,7 @@ export function configure(config: Config = {}) {
     showButtons: ["next", "previous", "close"],
     disableButtons: [],
     overlayColor: "#000",
+    focusElement: true,
     ...config,
   };
 }

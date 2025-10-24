@@ -18,6 +18,7 @@ export type Popover = {
   showButtons?: AllowedButtons[];
   showProgress?: boolean;
   disableButtons?: AllowedButtons[];
+  focusElement?: boolean;
 
   popoverClass?: string;
 
@@ -230,7 +231,8 @@ export function renderPopover(element: Element, step: DriveStep) {
   // Focus on the first focusable element in active element or popover
   const isToDummyElement = element.classList.contains("driver-dummy-element");
   const focusableElement = getFocusableElements([popoverWrapper, ...(isToDummyElement ? [] : [element])]);
-  if (focusableElement.length > 0) {
+  const shouldFocusElement = step.popover?.focusElement === undefined ? true : step.popover?.focusElement;
+  if (shouldFocusElement && focusableElement.length > 0) {
     focusableElement[0].focus();
   }
 }

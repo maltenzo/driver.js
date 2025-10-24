@@ -1,16 +1,16 @@
 {
-  "name": "driver.js",
+  "name": "@maltenzo/driver.js",
   "license": "MIT",
   "private": false,
-  "version": "1.3.6",
+  "version": "1.3.7",
   "main": "./dist/driver.js.cjs",
   "module": "./dist/driver.js.mjs",
   "types": "./dist/driver.js.d.ts",
-  "homepage": "https://driverjs.com",
-  "repository": "https://github.com/kamranahmedse/driver.js",
-  "author": "Kamran Ahmed <kamranahmed.se@gmail.com>",
+  "homepage": "https://github.com/maltenzo/driver.js#readme",
+  "repository": "https://github.com/maltenzo/driver.js",
+  "author": "Maltenzo <evigneti@gmail.com>",
   "bugs": {
-    "url": "https://github.com/kamranahmedse/driver.js/issues"
+    "url": "https://github.com/maltenzo/driver.js/issues"
   },
   "exports": {
     ".": {
